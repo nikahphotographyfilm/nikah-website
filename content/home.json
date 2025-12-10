@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "image": "https://picsum.photos/1920/1080?random=100",
+    "subtitle": "",
+    "title": "“Where Every Moment Feels Alive.”",
+    "titleLine2": "",
+    "description": ""
+  },
+  "intro": {
+    "mainImage": "https://picsum.photos/800/1000?random=101",
+    "subImage": "https://picsum.photos/400/400?random=102",
+    "subtitle": "OUR PHILOSOPHY",
+    "title": "Not just photos.",
+    "titleItalic": "Pure feelings.",
+    "description": "We believe weddings are best captured naturally — real moments, real emotions, no force, no rush. Based in Chittagong and working across Bangladesh, we focus on calm storytelling that lets your day speak for itself."
+  },
+  "videoSection": {
+    "bgImage": "https://picsum.photos/1920/1080?grayscale&blur=2",
+    "title": "The Cinematic Film",
+    "description": "Motion allows us to capture the vows, the laughter, and the tears in a way photography alone cannot."
+  }
+}

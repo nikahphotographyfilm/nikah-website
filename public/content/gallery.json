@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": "1", "src": "https://picsum.photos/800/1200?random=1", "category": "Wedding", "title": "Sarah & James", "location": "Lake Como, Italy" },
+    { "id": "2", "src": "https://picsum.photos/800/600?random=2", "category": "Pre-wedding", "title": "Elena & Marco", "location": "Paris, France" },
+    { "id": "3", "src": "https://picsum.photos/800/1000?random=3", "category": "Wedding", "title": "Aisha & Omar", "location": "Marrakech, Morocco" },
+    { "id": "4", "src": "https://picsum.photos/800/1200?random=4", "category": "Editorial", "title": "Vogue Feature", "location": "Santorini, Greece" },
+    { "id": "5", "src": "https://picsum.photos/800/800?random=5", "category": "Wedding", "title": "Li & Wei", "location": "Kyoto, Japan" },
+    { "id": "6", "src": "https://picsum.photos/800/1100?random=6", "category": "Films", "title": "Highlights: The Smiths", "location": "New York, USA" },
+    { "id": "7", "src": "https://picsum.photos/800/600?random=7", "category": "Pre-wedding", "title": "Golden Hour", "location": "Dubai, UAE" },
+    { "id": "8", "src": "https://picsum.photos/800/1000?random=8", "category": "Wedding", "title": "Classic Romance", "location": "London, UK" }
+  ]
+}

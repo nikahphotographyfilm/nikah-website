@@ -1,0 +1,89 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Blog Collection
+  - name: "blog"
+    label: "Blog"
+    folder: "public/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Nikah Team"}
+      - {label: "Cover Image", name: "coverImage", widget: "image"}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Page Content (Single Files)
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "public/content/home.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Background Image", name: "image", widget: "image"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Title Line 1", name: "title", widget: "string"}
+              - {label: "Title Line 2", name: "titleLine2", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Intro Section"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Main Image", name: "mainImage", widget: "image"}
+              - {label: "Secondary Image", name: "subImage", widget: "image"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Title Italic", name: "titleItalic", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Video Section"
+            name: "videoSection"
+            widget: "object"
+            fields:
+              - {label: "Background Image", name: "bgImage", widget: "image"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+
+  # Data Files
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "gallery"
+        label: "Gallery Items"
+        file: "public/content/gallery.json"
+        fields:
+          - label: "Gallery Images"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["Wedding", "Pre-wedding", "Films", "Editorial"]}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: "{{slug}}"}
+
+      - name: "reviews"
+        label: "Reviews"
+        file: "public/content/reviews.json"
+        fields:
+          - label: "Reviews List"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Event Type", name: "event", widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image"}
+              - {label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5}
+              - {label: "Review Text", name: "review", widget: "text"}

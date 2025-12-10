@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikah Photography - Premium Wedding Photography and Cinematography in Chittagong, Bangladesh. Capturing timeless moments with heart.">
+    <title>NIKAH - Premium Wedding Photography & Film</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 
+      Typography System:
+      - Main Headings: Cormorant Garamond (Premium Serif)
+      - Subheadings: Bodoni Moda (High contrast serif)
+      - Body: Jost (Modern Geometric Sans)
+      - Script: Pinyon Script (Classic Script)
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#C59D5F',
+                light: '#DEC191',
+                dark: '#A37F45',
+              },
+              charcoal: '#111214',
+              surface: '#F6F6F7',
+              darkSurface: '#1C1C1E', 
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              subheading: ['"Bodoni Moda"', 'serif'],
+              sans: ['"Jost"', 'sans-serif'],
+              script: ['"Pinyon Script"', 'cursive'],
+            },
+            container: {
+              center: true,
+              padding: '1.5rem',
+              screens: {
+                sm: '640px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1440px',
+              },
+            },
+            transitionTimingFunction: {
+              'premium': 'cubic-bezier(0.22, 1, 0.36, 1)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0?deps=react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?deps=react@18.2.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.2.0",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?deps=react@18.2.0,react-dom@18.2.0",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1?deps=react@18.2.0",
+    "js-yaml": "https://esm.sh/js-yaml@4.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-charcoal text-charcoal dark:text-white font-sans antialiased selection:bg-gold/20 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
